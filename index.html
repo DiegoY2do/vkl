@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>VKL</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <section class="nav-container">
+           <a href="index.html"><h1 class="nav-title">VKL</h1></a> 
+            <label for="menu" class="nav-label">
+                <img src="assets/svg/menu.svg" alt="Menu Icon">
+            </label>
+            <input type="checkbox" name="" id="menu" class="nav-input">
+
+            <section class="nav-menu">
+                <a onclick="scrollToSection('intro')" class="nav-item">Inicio</a>
+                <a onclick="scrollToSection('service')" class="nav-item">Servicios</a>
+                <a onclick="scrollToSection('us')" class="nav-item">Nosotros</a>
+                <a onclick="scrollToSection('why')" class="nav-item">¿Por qué una web?</a>
+                <a onclick="scrollToSection('opinions')" class="nav-item">Opiniones</a>
+                <a onclick="scrollToSection('contact')"class="nav-item">Contacto</a>
+            </section>
+        </section>
+    </nav>
+
+    <main>
+        <section class="intro-container" id="intro">
+           <div class="intro-info">
+                <h1>VKL</h1>
+                <p>Tu negocio, <span>nuestra web </span> <br> creando juntos soluciones digitales <br> que impulsan <span>tu crecimiento y éxito</span></p>
+                <input class="btn-intro" type="button" value="contáctenos">
+           </div>
+
+           <div class="intro-img">
+                <img src="assets/img/man-with-smartphone-sits-front-laptop-late-night.webp" alt="man with smartphone sits front laptop late night">
+           </div>
+        </section>
+        
+        <section class="service-container" id="service">
+            <div class="service-info">
+                <div class="card-service">
+                    <img src="assets/img/icons/programacion-web.webp" alt="">
+                    <p>Diseño de paginas web</p>
+                    <a href="">Más</a>
+                </div>
+                <div class="card-service">
+                    <img src="assets/img/icons/sitio-web.webp" alt="">
+                    <p>E-commerce</p>
+                    <a href="">Más</a>
+                </div>
+                <div class="card-service">
+                    <img src="assets/img/icons/interfaz-ux.webp" alt="">
+                    <p>Consultoria UX</p>
+                    <a href="">Más</a>
+                </div>
+                <div class="card-service">
+                    <img src="assets/img/icons/apoyo-tecnico.webp" alt="">
+                    <p>Soporte Técnico</p>
+                    <a href="">Más</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="us-container" id="us">
+            <div class="us-info">
+                <h2>Nosotros</h2>
+                <p>Somos una agencia de diseño web que <span>impulsa tu negocio</span>  con sitios web personalizados, <br> e-commerce y soluciones digitales efectivas. <br><br> Transformamos tu visión en una <span> presencia web impactante</span></p>
+                <div class="buttons">
+                    <input type="button" class="btn-info" value="contáctenos">
+                    <input type="button" class="btn-our-pages" value="Nuestro trabajo">
+                </div>
+            </div>
+
+            <div class="about-us">
+                <div class="about-us-img">
+                    <img class="img-about" src="assets/img/team-process-creation.webp" alt="team process creation">
+                </div>
+
+                <div class="why-us">
+                    <h2>Acerca del estudio</h2>
+                     <div class="about-info">
+                        <article>
+                            <p>
+                                Somos una empresa mexicana de software y diseño web, dedicada a ofrecer servicios únicos y personalizados con un diseño intuitivo y funcional. <br>
+                                <br> Nos enfocamos en crear experiencias de usuario cómodas y agradables, asegurando que los visitantes se sientan bienvenidos y motivados a regresar.  <br><br>Nuestro compromiso es desarrollar soluciones tecnológicas que no solo satisfagan las necesidades de nuestros clientes, sino que también superen sus expectativas, proporcionando un rendimiento excepcional y un valor duradero.</p>
+                        </article>
+
+                        <div class="benefits">
+                            <p><span>01.</span> Diseño Personalizado</p>
+                            <p><span>02.</span> Experiencia de Usuario Optimizada</p>
+                            <p><span>03.</span> Soporte Técnico Continuo</p>
+                            <p><span>04.</span> Innovación y Tecnología de Vanguardia</p>
+                            <p><span>05.</span> Integración Completa</p>
+                            <p><span>06.</span> Escalabilidad</p>
+                            <p><span>07.</span> Resultados Medibles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-a-website" id="why">
+            <div class="why-info">
+                <div class="titlte-why">
+                    <h2>El sitio web de su empresa es su recepción digital para los clientes y visitantes.</h2>
+                    <div class="circle"></div>
+                </div>
+    
+                <article class="speach-why">
+                    <h2>¿Por qué elegir un sitio web es tu mejor inversión?</h2>
+                    <p>Invertir en un sitio web es una decisión estratégica que ofrece numerosos beneficios tanto a corto como a largo plazo. Un sitio web proporciona presencia en línea 24/7, permitiéndote captar negocios a cualquier hora del día y alcanzar una audiencia global. Esta herramienta esencial mejora la credibilidad de tu negocio, ya que los consumidores confían más en empresas con una presencia en línea profesional.</p>
+                    
+                    <p>En términos de costos, un sitio web es una inversión mucho más rentable comparada con la publicidad tradicional, ofreciendo una plataforma para mostrar tus productos y servicios sin los altos costos de los medios impresos o televisivos. Además, un sitio web bien diseñado no solo atrae a visitantes, sino que también los convierte en clientes mediante herramientas de marketing digital como SEO, SEM y redes sociales.</p>
+                </article>
+            </div>
+
+            <div class="img-website">
+                <img src="assets/img/img_freepik_com-laboratorio-computacion-moderno-equipado_23-2149241209.webp" alt="modern equipped computer laboratory">
+            </div>
+        </section>
+
+        <section class="personalization">
+            <div class="personalization-info">
+                <h2>Soluciones personalizadas</h2>
+                <p>Una solución personalizada es fundamental porque se adapta a las necesidades y características únicas de tu negocio, a diferencia de las soluciones estándar que a menudo son limitadas y poco flexibles. Al estar diseñada específicamente para ti, optimiza tus procesos internos, mejora la eficiencia operativa y ofrece una experiencia única a tus usuarios. Esto no solo te ayuda a alcanzar tus objetivos comerciales de manera más efectiva, sino que también te permite destacar en un mercado competitivo. </p>
+
+                <p>Además, una solución personalizada proporciona la agilidad necesaria para adaptarte rápidamente a los cambios del mercado y a las nuevas demandas tecnológicas. Puedes implementar innovaciones y ajustes sin las restricciones impuestas por opciones genéricas, lo que te da una ventaja competitiva importante. Esta capacidad de personalización asegura que tu negocio no solo se mantenga relevante, sino que también crezca de manera sostenible y exitosa en un entorno empresarial en constante evolución.</p>
+            </div>
+        </section>
+
+        <section class="opinions-container" id="opinions">
+            <div class="opinions-info">
+                <h2>Lo que dicen los clientes</h2>
+                <p>Damos un gran valor a las relaciones sólidas y hemos visto el beneficio que aportan a nuestro negocio. <br><br> Los comentarios de los clientes son vitales para ayudarnos a hacerlo bien.</p>    
+            </div>
+
+            <div class="slider">
+                <div class="slider-container">
+                    <div class="slide">
+                        <div class="card-opinions">
+                            <p>¡Este es un comentario excelente sobre el servicio!</p>
+                            <h3>servicio</h3>
+                            <p>Nombre</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card-opinions">
+                            <p>Otro comentario destacado que vale la pena leer.</p>
+                            <h3>servicio</h3>
+                            <p>Nombre</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card-opinions">
+                            <p>Una opinión más que muestra la satisfacción del cliente.</p>
+                            <h3>servicio</h3>
+                            <p>Nombre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="indicators"></div>
+            </div>
+        </section>
+
+        <section class="contact-container" id="contact">
+            <div class="contact-info">
+                <div class="contac-speach">
+                    <h2>Preparándonos para su éxito,<br> brindamos soluciones de TI verdaderamente destacadas.</h2>
+                    <div class="circle"></div>
+                </div>
+                <form action="" method="post">
+                    <h2>Pide información</h2>
+                    <p>Contáctanos y descubre cómo podemos asistirte. Nuestro objetivo es mantenernos conectados y ofrecerte el mejor apoyo.</p>
+                    <input class="input-form"  type="text" name="name" id="name" placeholder="Nombre" required>
+                    <input class="input-form" type="email" name="email" id="email" placeholder="Email" required>
+                    <input class="input-form" type="text" name="phone" id="phone" placeholder="Ingresa tu número" required>
+                    <input class="input-form" type="text" name="message" id="message" class="message" placeholder="Servicio(s) de tu interés u otra información" required>
+                    <input class="input-form btn-form" type="submit" name="send" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="legal">
+                <p>© 2024 VKL. Todos los derechos reservados. Queda prohibida la reproducción total o parcial de este sitio web, incluyendo, pero no limitado a, textos, gráficos, imágenes, y cualquier otro contenido, sin la autorización expresa y por escrito de VKL. Todos los nombres comerciales, marcas registradas, logotipos y diseños mencionados o que aparezcan en este sitio web son propiedad de sus respectivos dueños. Cualquier uso no autorizado del contenido puede violar leyes de derechos de autor, marcas registradas, privacidad y publicidad, así como regulaciones y estatutos de comunicaciones.</p>
+                <br>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Política de Cookies</a>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+                <p>Teléfono: +1 234 567 890</p>
+                <p>Email: contacto@tusitio.com</p>
+                <br>
+                <h3>Síguenos</h3>
+                <a href="#"><img src="assets/img/icons/facebook (3).png" alt="Facebook"></a>
+                <a href="#"><img src="assets/img/icons/whatsapp (3).png" alt="whatsapp"></a>
+                <a href="#"><img src="assets/img/icons/instagram (2).png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script src="js/index.js"></script>
+</html>

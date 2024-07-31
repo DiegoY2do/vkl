@@ -1,0 +1,1233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    color: #e45500;
+}
+
+.nav-bar{
+    background-color: #333;
+    height: 80px;
+    width: 100%;
+    color: white;
+    position: fixed;
+    z-index: 999;
+}
+
+.nav-container{
+    display: flex;
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title{
+    font-size: 2.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav-menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 25px;
+}
+
+.nav-item{
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    color: #f28755;
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    color: white;
+
+}
+
+.nav-label, .nav-input{
+    display: none;
+}
+
+main{
+    position: relative;
+    top: 80px;
+}
+
+.intro-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+.intro-info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.intro-info h1{
+    font-size: 5em;
+    animation: slideInFromLeft 1.5s ease-out;
+}
+
+.intro-container p{
+    font-size: 1.5em;
+    transform: scale(0); /* Comienza en tamaño pequeño */
+    animation: appearFromBack 1s ease-out forwards;
+}
+
+.intro-container .btn-intro{
+    width: 250px;
+    height: 70px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2.5px black solid;
+    cursor: pointer;
+    margin-top: 30px;
+    animation: slideInFromLeft 1.5s ease-out;
+}
+
+.intro-container .btn-intro:hover{
+    background-color: black;
+    color: white;
+}
+
+.intro-img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-img img{
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 350px;
+    border-bottom-left-radius: 350px;
+    animation: slideInFromRight 1.5s ease-out;
+}
+
+.service-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.service-container .service-info {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: center;
+    gap: 50px;
+}
+
+.service-info .card-service {
+    width: 280px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+}
+
+.card-service img{
+    width: 80px;
+}
+
+.card-service p{
+    font-size: 1.6em;
+}
+
+.card-service a{
+    font-size: 1.4em;
+    color: black;
+    text-transform: uppercase;
+}
+
+.card-service a:hover{
+    color: #e45500;
+}
+
+.us-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.us-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden; /* Asegura que el SVG no se desborde */
+    background: url('../svg/backgroundUs.svg') no-repeat;
+    background-size: cover; /* Ajusta el tamaño del SVG */
+    padding-bottom: 50px;
+}
+
+.us-info h2{
+    font-size: 3em;
+}
+
+.us-info p{
+    width: 40%;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.buttons{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.buttons  .btn-info{
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border: 2.5px #e45500 solid;
+    border-radius: 50px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.buttons  .btn-our-pages{
+    width: 300px;
+    height: 50px;
+    background-color: #e45500;
+    border-color: transparent;
+    border-radius: 50px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: white;
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.buttons .btn-info:hover{
+    background-color: #e45500;
+    border-color: transparent;
+    color: white;
+}
+
+.buttons .btn-our-pages:hover{
+    background-color: white;
+    border: 2.5px #e45500 solid;
+    color: black;
+}
+
+.about-us{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #e5e5e5;
+    overflow: hidden;
+}
+
+.about-us-img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.about-us-img img{
+    width: 100%;
+    height: 80%;
+    border-top-right-radius: 350px;
+    border-bottom-right-radius: 350px;
+}
+
+.why-us{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 80px;
+}
+
+.why-us h2{
+    font-size: 4em;
+    color: #e45500;
+}
+
+.why-us .about-info{
+    width: 100%;
+    display: flex;
+    gap: 150px;
+}
+
+.about-info article{
+    width: 600px;
+}
+
+.about-info article p{
+    font-size: 1.8em;
+}
+
+.about-info .benefits{
+    width: 600px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 50px;
+    gap: 10px;
+    text-align: left;
+    border-radius: 50px;
+}
+
+.benefits p{
+    font-size: 1.5em;
+}
+
+.benefits p span{
+    font-weight: 900;
+}
+
+.why-a-website{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.why-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #e45500;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.why-a-website h2{
+    font-size: 2.5em;
+    color: white;
+}
+
+.why-a-website .titlte-why{
+    width: 550px;
+    display: flex;
+    flex-direction: column; 
+    gap: 50px;
+    padding: 50px;
+}
+
+ .titlte-why .circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f28755;
+}
+
+.why-a-website .speach-why{
+    width: 800px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+
+.speach-why p{
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+.img-website{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #e5e5e5;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    background: url('../svg/img-website.svg') ;
+
+}
+
+.img-website img{
+    width: 50%;
+    height: 60%;
+    border-top-left-radius: 350px;
+    border-bottom-left-radius: 350px;
+}
+
+.personalization{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.personalization-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50PX;
+}
+
+.personalization-info h2{
+    font-size: 4em;
+    color: #e45500;
+}
+
+.personalization-info p{
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.opinions-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #e45500;
+    overflow: hidden;
+    gap: 50px;
+}
+
+.opinions-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.opinions-info h2{
+    color: white;
+    font-size: 4em;
+}
+
+.opinions-info p{
+    width: 50%;
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.card-opinions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    gap: 30px;
+    color: white;
+}
+
+.card-opinions p{
+    font-size: 2em;
+}
+
+.card-opinions h3{
+    font-size: 1.8em;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+    width: 100%;
+}
+
+.indicators span {
+    background-color: #CCCCCC;
+    border-radius: 5px;
+    display: inline-block;
+    width: 50px;
+    height: 10px;
+    margin: 0 15px;
+}
+
+.indicators .active {
+    background-color: white;
+}
+
+.contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    gap: 50px;
+}
+
+.contact-info{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contac-speach{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 50px;
+    gap: 50px;
+}
+
+.contac-speach .circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f28755;
+}
+
+form{
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+form h2{
+    font-size: 2.5em;
+    color: #e45500;
+}
+
+form p{
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.input-form{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    text-indent: 15px;
+    border-color: #e45500;
+    margin-top: 10px;
+}
+
+.btn-form{
+    width: 300px;
+    background-color: #e45500;
+    color: white;
+    font-size: 1.5em;
+    border-color: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+    text-indent: 0px;
+}
+
+.btn-form:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: #e45500 solid 3px ;
+}
+
+.contac-speach h2{
+    font-size: 3em;
+    color: #e45500;
+}
+
+footer{
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-container{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-contact{
+    width: 300px;
+}
+
+.footer-contact img{
+    width: 30px;
+    margin: 10px;
+}
+
+.legal{
+    width: 900px;
+    padding: 20px;
+}
+
+.legal a{
+    color: white;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.social{
+    width: 200px;
+}
+
+.card-service img, .card-service p, .us-info h2, .us-info p, .buttons .btn-info, .buttons .btn-our-pages, .about-us-img .img-about, .why-us h2, .about-info article, .about-info .benefits, .why-a-website .titlte-why, .why-a-website .speach-why, .img-website img, .personalization-info h2, .personalization-info p, .opinions-info h2, .opinions-info p, .slider, .contac-speach, form{
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.card-service img.show, .card-service p.show , .us-info h2.show, .us-info p.show, .slider.show, form.show {
+    animation: slideInFromTop 1s ease-out forwards;
+}
+
+.card-service a.show, .personalization-info p.show,  .card-opinions.show{
+    animation: slideInFromBottom 1s ease-out forwards;
+}
+
+.buttons .btn-info.show, .about-info .benefits.show, .why-a-website .speach-why.show, .img-website img.show, .opinions-info p.show {
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+.buttons .btn-our-pages.show, .about-us-img .img-about.show, .why-us h2.show, .about-info article.show, .why-a-website .titlte-why.show, .personalization-info h2.show, .opinions-info h2.show, .contac-speach.show {
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft{
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appearFromBack {
+    0% {
+        transform: translate scale(0); /* Comienza desde atrás */
+        opacity: 0;
+    }
+    100% {
+        transform:scale(1); /* Tamaño normal */
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav-title{
+        font-size: 1.5em;
+    }
+
+    .nav-label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-color: #333;
+        width: 100%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path .5s ease-in-out;
+    }
+
+    .nav-input:checked + .nav-menu{
+        background-color: #333;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .nav-item{
+        padding-top: 50px;
+        font-size: 1em;
+        letter-spacing: .2em;
+    }
+
+    .intro-info h1{
+        font-size: 4em;
+    }
+    
+    .intro-container p{
+        font-size: 1.4em;
+    }
+    
+    .intro-container .btn-intro{
+        width: 200px;
+        height: 50px;
+        font-size: 1em;
+    }
+    
+    .intro-container .btn-intro:hover{
+        background-color: black;
+        color: white;
+    }
+
+    .us-info h2{
+        font-size: 3em;
+    }
+
+    .us-info p{
+        width: 80%;
+    }
+
+    .buttons{
+        width: 90%;
+    }
+    .why-us{
+        padding: 50px;
+    }
+
+    .why-us .about-info{
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .about-info article{
+        width: 100%;
+    }
+    
+    .about-info article p{
+        font-size: 1.8em;
+    }
+
+    .opinions-container{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .opinions-info h2{
+        color: white;
+        font-size: 3em;
+    }
+    
+    .opinions-info p{
+        width: 80%;
+        font-size: 1.5em;
+    }
+    
+    .slider {
+        position: relative;
+        width: 90%;
+        overflow: hidden;
+    }  
+    .card-opinions p{
+        font-size: 1.5em;
+    }
+    
+    .card-opinions h3{
+        font-size: 1.3em;
+    }
+
+    .contact-info{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .contac-speach{
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    form h2{
+        font-size: 2.5em;
+        color:#e45500;
+    }
+
+    .btn-form{
+        width: 250px;
+    }
+
+    .contac-speach h2{
+        font-size: 2.5em;
+        color: #e45500;
+    }
+}
+
+  @media only screen and (max-width: 768px) {
+    .intro-container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .intro-info{
+        width: 100%;
+    }
+    
+    .intro-info h1{
+        font-size: 4em;
+    } 
+
+    .intro-container .btn-intro{
+        width: 200px;
+        height: 50px;
+        font-size: 1em;
+    }
+    
+    .intro-img{
+        width: 100%;
+        height: 100%;
+        justify-content: flex-end;
+    }
+    
+    .intro-img img{
+        width: 90%;
+    }
+    
+    .us-info{
+        background: url('../svg/backgroundUs.svg') no-repeat center;
+        background-size: cover;
+
+    }
+    
+    .us-info h2{
+        font-size: 2.5em;
+    }
+    
+    .us-info p{
+        width: 90%;
+        font-size: 1.5em;
+    }
+    
+    .buttons{
+        width: 90%;
+    }
+    
+    .buttons  .btn-info{
+        font-size: 1em;
+    }
+    
+    .buttons  .btn-our-pages{
+        font-size: 1em;
+    }
+
+    .about-us-img{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .about-us-img img{
+        width: 90%;
+    }
+
+    .why-us{
+        flex-direction: column;
+    }
+    
+    .why-us h2{
+        font-size: 3em;
+    }
+    
+    .why-us .about-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-info article{
+        width: 100%;
+    }
+    
+    .about-info article p{
+        font-size: 1.5em;
+    }
+    
+    .about-info .benefits{
+        width: 100%;
+    }
+    
+    .benefits p{
+        font-size: 1.3em;
+    }
+    .why-info{
+        flex-direction: column;
+    }
+    
+    .why-a-website h2{
+        font-size: 2em;
+    }
+    
+    .why-a-website .titlte-why{
+        width: 100%;
+    }
+
+    .why-a-website .speach-why{
+        width: 100%;
+    }
+    
+    .speach-why p{
+        font-size: 1.5em;
+    }
+
+    .img-website img{
+    width: 90%;
+    height: 80%;
+    }
+
+    .personalization-info h2{
+        font-size: 3em;
+        color: #e45500;
+    }
+    
+    .personalization-info p{
+        font-size: 1.5em;
+    }    
+
+    .opinions-container{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .opinions-info h2{
+        font-size: 2.5em;
+    }
+    
+    .opinions-info p{
+        width: 90%;
+        color: white;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    
+    .slider {
+        width: 100%;
+    }
+
+    .card-opinions p{
+        font-size: 1.8em;
+    }
+    
+    .card-opinions h3{
+        font-size: 1.5em;
+    }
+    
+    .contact-info{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .contac-speach{
+        width: 100%;
+    }
+    
+    form{
+        width: 100%;
+    }
+    
+    form h2{
+        font-size: 2em;
+    }
+    
+    .input-form{
+        width: 350px;
+    }
+    
+    .btn-form{
+        width: 280px;
+    }
+    
+    .contac-speach h2{
+        font-size: 2.5em;
+    }  
+}
+
+@media only screen and (max-width: 480px) {
+    .intro-info h1{
+        font-size: 3.5em;
+    } 
+
+    .intro-container p{
+        text-align: center;
+        width: 90%;
+        font-size: 1.5em;
+    }
+    
+    .intro-img{
+        width: 100%;
+        height: 100%;
+        justify-content: flex-end;
+    }
+    
+    .intro-img img{
+        width: 95%;
+    }
+    
+    .us-info h2{
+        font-size: 2em;
+    }
+    
+    .us-info p{
+        width: 90%;
+        font-size: 1.3em;
+    }
+    
+    .buttons{
+        width: 100%;
+    }
+    
+    .buttons .btn-info{
+        width: 350px;
+        font-size: .8em;
+    }
+    
+    .buttons .btn-our-pages{
+        width: 350px;
+        font-size: .8em;
+    }
+    
+    .about-us-img img{
+        width: 95%;
+    }
+
+    .why-us{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .why-us h2{
+        font-size: 2em;
+    }
+    
+    .why-us .about-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-info article{
+        width: 100%;
+    }
+    
+    .about-info article p{
+        font-size: 1.3em;
+    }
+    
+    .about-info .benefits{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        background-color: transparent;
+    }
+    
+    .benefits p{
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .why-a-website h2{
+        font-size: 2em;
+    }
+    
+    .why-a-website .titlte-why{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .why-a-website .speach-why{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .speach-why p{
+        width: 100%;
+        font-size: 1.5em;
+        text-align: left;
+    }
+
+    .img-website img{
+    width: 90%;
+    height: 80%;
+    }
+
+    .personalization{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .personalization-info{
+        padding: 20PX;
+    }
+    
+    .personalization-info h2{
+        font-size: 2em;
+    }
+    
+    .personalization-info p{
+        width: 100%;
+        text-align:left;
+        font-size: 1.4em;
+    }   
+    
+    .opinions-container{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .opinions-info h2{
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    .opinions-info p{
+        width: 90%;
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .card-opinions p{
+        font-size: 1.5em;
+    }
+    
+    .card-opinions h3{
+        font-size: 1.3em;
+    }
+    
+
+    .contac-speach{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    
+    form{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    form h2{
+        font-size: 2em;
+    }
+    
+    .input-form{
+        width: 90%;
+    }
+    
+    .btn-form{
+        width: 60%;
+    }
+    
+    .contac-speach h2{
+        font-size: 2em;
+    }  
+}
